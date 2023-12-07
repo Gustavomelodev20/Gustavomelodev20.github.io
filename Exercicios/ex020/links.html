@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        a:visited {
+            color: green;
+        }
+        a:hover {
+            text-decoration: overline;
+            color: black;
+        }
+        a:active {
+            color: yellow;
+        }
+        a::after {
+          content:'<';
+        }
+        a::before {
+            content:'>';
+        }
+        .especial {
+            background-color: brown;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+       
+            <li><a href="https://willycamargo.notion.site/Planejamento-de-Estudos-Frontend-2fca95c9210b47adb670599ce632934c">Repositório</a></li>
+        </a>
+        <li><a href="https://www.youtube.com" class="especial">Canal no YouTube</a></li>
+        
+            <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/">Site do Cursoemvídeo</a></li>
+    </ul>
+
+    
+</body>
+</html>

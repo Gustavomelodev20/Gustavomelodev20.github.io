@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário
+
+    </title>
+    <style>
+        body {
+            font-family: sans-serif;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: rgb(255, 255, 255);
+        }
+      
+        fieldset {
+            border-radius: 5px;
+            width: 200px;
+            background-color: antiquewhite;
+            margin-bottom: 10px;
+            
+        }
+        legend {
+            padding: 5px;
+            color: rgb(0, 0, 0);
+            background-color: #bc87f8;
+            border-radius: 5px;
+            border: 1px solid black;
+            
+        }
+        p > input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+            background-color: rgb(66, 212, 66);
+        }
+        #del {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Exemplo de Formulário
+    </h1>
+    
+        <form action="cadastro.php" method="get">
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <input type="radio" name="sexo" id="isxmax"> <label for="isxmax">Maculino</label>
+                    <br>
+                    <input type="radio" name="sexo" id="isxfem" checked> <label for="isxfem">Feminino</label>
+                    <br>
+                    <input type="radio" name="sexo" id="isxout"> <label for="isxout">Outro</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Esportes favoritos</legend>
+                    <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label>
+                    <br>
+                    <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label>
+                    <br>
+                    <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label>
+                    <br>
+                    <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label>
+        
+                </fieldset>
+                <fieldset>
+                    <legend>Cor favorita</legend>
+                    <label for="icor">Cor</label>
+                    <input type="color" name="cor" id="icor">
+                </fieldset>
+                <fieldset>
+                   <legend>Nível de Satisfação</legend>
+                    <input type="range" name="sas" id="isas" min="5" max+="10" value="10">
+                </fieldset>
+                <fieldset>
+                    <legend>Foto do Perfil</legend>
+                    <input type="file" name="foto" id="ifoto">
+                </fieldset>
+                <fieldset>
+                    <legend>Estado</legend>
+                    <label for="ies">Selecione seu Estado</label>
+                    <select name="estado" id="ies">
+                        <option value="" selected>---Escolha---</option>
+                            <optgroup label="Suldeste">
+                                <option value="SP">São Paulo</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                            </optgroup>
+
+                            <optgroup label="Nordeste">
+                                <option value="PE">Pernambuco</option>
+                            </optgroup>
+
+
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Profissão</legend>
+                    <input type="text" name="prof" id="iprof" list="ilstpro">
+                    <datalist id="ilstpro">
+                        <option>Adminastrador</option>
+                        <option>Desenvolvedor</option>
+                    </datalist>
+                </fieldset>
+                <fieldset>
+                    <legend>Mensagem</legend>
+                    <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+                </fieldset>
+            <p>
+            <input type="submit" value="Eviar">
+            <input type="reset" value="Deletar" id="del">
+        </p>
+    </div>
+
+
+    </form>
+
+
+
+
+</body>
+</html>
